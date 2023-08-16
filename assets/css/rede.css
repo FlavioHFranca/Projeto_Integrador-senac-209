@@ -1,0 +1,757 @@
+/* /Importando fonta da API google fonte --> League Spartan/ */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;700&display=swap');
+
+/* Zerar todas as margens e espaçamentos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+/* Inicio do documento*/
+html {
+
+    width: 100%;
+
+    color: #fff;
+
+    overflow-x: hidden;
+
+}
+
+/* Corpo do documento*/
+body {
+    width: 100%;
+    background-color: #7F8180;
+
+}
+
+/* Personalização da barra de rolagem */
+body::-webkit-scrollbar {
+    background-color: #010A19;
+    width: 8px;
+
+    border: 1 px solid #010A19;
+
+}
+
+/* Botão da barra de rolagem  */
+body::-webkit-scrollbar-thumb {
+    background-color: #00bb83;
+
+    height: 20px;
+    border-radius: 7px;
+}
+
+/* Cabeçalho*/
+header {
+    width: 100%;
+    height: 12vh;
+    background: #010A19;
+    position: fixed;
+    z-index: 3;
+
+}
+
+
+/* Cabeçalho*/
+.menugeral {
+
+    text-transform: uppercase;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+/* Cabeçalho logo*/
+.menugeral img {
+
+    margin-right: 110px;
+    width: 290px;
+}
+
+/* Cabeçalho lista dos serviços*/
+.menugeral ul {
+    margin-left: 300px;
+
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menugeral ul a {
+    font-size: .6em;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.5rem;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
+
+}
+
+/* /Efeito de ao passar o mouse ficar com a linha verde/ */
+.menugeral ul a:hover {
+    border-bottom: 3px solid #00CC8D;
+}
+
+/* Whatsapp contato*/
+.contato-zap {
+    /* Fixando o incone do zap na tela*/
+    position: fixed;
+    /* Posicionando o incone*/
+    top: 50%;
+    left: 98.1%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+    /* Prioridade de visualização*/
+    width: 50px;
+    /* tamanho*/
+    opacity: 60%;
+    /* O quanto fica tranparente*/
+    transition: all 0.2s ease-in-out;
+}
+
+/* Mudando a opacidade, tamanho e posição*/
+.contato-zap:hover {
+    position: fixed;
+
+    top: 50%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+
+    width: 70px;
+    opacity: 100%;
+    /* Tirandodo a tranparencia*/
+}
+
+
+.titulo {
+    background-color: #010A19;
+    text-align: center;
+    font-size: 26px;
+}
+
+section:nth-of-type(1) {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../assets/img/imgRede/vantagens-do-link-dedicado-1-925x308.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.texto-banner {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+
+    background: radial-gradient(921.11% 141.42% at 100.00% 100.00%,
+            rgba(0, 187, 131, 0.269) 0%,
+            rgba(255, 255, 255, 0.00) 60%);
+    backdrop-filter: blur(2px);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.texto-banner h1 {
+    font-size: 5em;
+    /* -webkit-text-stroke: 1.5px #000000; */
+    text-shadow: 1px 1px 2px #000000ac;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 75px;
+
+}
+
+.descricao-botao-img {
+
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #21242E;
+    padding: 30px;
+    justify-content: center;
+    margin: auto;
+}
+
+.descricao-botao-img ul {
+    margin: auto;
+    list-style: none;
+    text-indent: 20px;
+    margin: 0px 40px;
+    line-height: 40px;
+    font-size: 1.8em;
+    text-align: justify;
+    color: #fff;
+
+}
+
+.descricao-botao-img li {
+    width: 800px;
+}
+
+.botao-manutencao1 {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 190px;
+    height: 39px;
+    font-size: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+
+
+
+    background-color: #00CC8D;
+
+}
+
+.botao-manutencao1 a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.botao-manutencao1:hover {
+    /* border: 2px solid #00CC8D;     */
+    background-color: #21242E;
+}
+
+.descricao-botao-img img {
+    width: 400px;
+
+}
+
+
+
+/* Caixas dos serviços */
+.caixas {
+
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 900px;
+    /* background-color: #144233; */
+
+
+
+}
+
+/*------------- INICIO DA MANUTENÇÃO-------------*/
+.caixa-manutencao {
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+
+}
+
+/* Titulo  */
+.caixa-manutencao h1 {
+    color: #000000;
+    font-size: 2em;
+
+}
+
+/* Texto de explicação   */
+.texto-manutencao {
+    background-color: #00cc8b;
+    color: #fff;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 45px 35px 0 35px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    line-height: 20px;
+}
+
+/* Apareção da explicação  */
+.caixa-manutencao:hover>.texto-manutencao {
+    display: block;
+    position: absolute;
+}
+
+
+/*------------- INICIO DA DOMINIO-------------*/
+.caixa-dominio {
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+}
+
+/* Titulo  */
+.caixa-dominio h1 {
+    color: #000000;
+    font-size: 2em;
+}
+
+/* Texto de explicação   */
+.texto-dominio {
+    background-color: #00cc8b;
+    color: #fff;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 65px 35px 0 35px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    line-height: 20px;
+}
+
+/* Apareção da explicação  */
+.caixa-dominio:hover>.texto-dominio {
+
+    position: absolute;
+    display: block;
+
+}
+
+
+
+
+/*------------- INICIO DA REDE -------------*/
+.caixa-rede {
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+
+}
+
+/* Titulo  */
+.caixa-rede h1 {
+    color: #000000;
+    font-size: 2em;
+}
+
+/* Texto de explicação   */
+.texto-rede {
+    background-color: #00cc8b;
+    color: #fff;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 75px 35px 0 35px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    line-height: 20px;
+}
+
+/* Apareção da explicação  */
+.caixa-rede:hover>.texto-rede {
+    display: block;
+    position: absolute;
+
+}
+
+
+/*------------- INICIO DE ROTEADORES-------------*/
+
+.caixa-roteadores {
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+}
+
+/* Titulo  */
+.caixa-roteadores h1 {
+    color: #000000;
+    font-size: 2em;
+}
+
+.caixa-roteadores img {
+    width: 190px;
+}
+
+.texto-roteadores {
+    background-color: #00cc8b;
+    color: #fff;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 100px 35px 0 35px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    line-height: 20px;
+}
+
+/* Apareção da explicação  */
+.caixa-roteadores:hover>.texto-roteadores {
+    display: block;
+    position: absolute;
+
+}
+
+/*------------- INICIO DE Softwares para Escritório-------------*/
+
+.caixa-S-escritorio {
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+}
+
+/* Titulo  */
+.caixa-S-escritorio h1 {
+    color: #000000;
+    font-size: 2em;
+}
+
+/* Texto de explicação   */
+.texto-S-escritorio {
+    background-color: #00cc8bb3;
+    color: #fff;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 70px 35px 0 35px;
+    font-weight: bold;
+    text-align: justify;
+    display: none;
+}
+
+/* Apareção da explicação  */
+.caixa-S-escritorio:hover>.texto-S-escritorio {
+    display: block;
+    position: absolute;
+
+}
+
+/*------------- INICIO DE ATENDIMENTO-------------*/
+
+.caixa-atendimento {
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+}
+
+/* Titulo  */
+.caixa-atendimento h1 {
+    color: #000000;
+    font-size: 2em;
+}
+
+/* Texto de explicação   */
+.texto-atendimento {
+    background-color: #00cc8bb3;
+    color: #fff;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 80px 35px 0 35px;
+    font-weight: bold;
+    text-align: justify;
+    display: none;
+}
+
+/* Apareção da explicação  */
+.caixa-atendimento:hover>.texto-atendimento {
+    display: block;
+    position: absolute;
+
+}
+
+.sobre-redes {
+    background-color: #21242E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/* .sobre-redes h1{
+text-align: center;
+text-transform: uppercase;
+padding-bottom: 260px;
+} */
+
+
+
+.sobre-redes p {
+    color: #fff;
+    text-align: justify;
+    font-size: 1.8em;
+    padding: 0 40px;
+    line-height: 40px;
+    width: 800px;
+}
+
+.sobre-redes img {
+    /* padding-top: 10px;
+    padding-left: 10px; */
+    padding: 10px;
+    width: 550px;
+    height: 400px;
+}
+
+/* rodapé*/
+footer {
+    width: 100%;
+    background: #010A19;
+    text-align: justify;
+    padding: 50px 0px;
+}
+
+.topicos {
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+/* logo*/
+.logo-footer img {
+    width: 290px;
+}
+
+/* Listas */
+footer ul {
+
+    list-style: none;
+    color: #fff;
+
+    letter-spacing: 0.2rem;
+    font-size: 0.6em;
+    font-weight: 80;
+}
+
+.servicos-footer h3 {
+
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 2rem;
+    font-size: 2.2em;
+
+}
+
+.servicos-footer li {
+
+    margin-bottom: 5px;
+
+}
+
+.servicos-footer a {
+    font-size: 1.5em;
+    color: #d5d5d5;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+
+/* Animação  de passar o mouse*/
+.servicos-footer a:hover {
+    color: #00CC83;
+
+}
+
+/* --------- Seta de voltar ao topo e as redes sociais--------- */
+.volta-topo-sociais {
+
+    width: 170px;
+
+    color: #fff;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+
+
+
+
+}
+
+.volta-topo {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.seta {
+
+    margin: -3.5px 14px;
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+
+
+
+}
+
+.topo {
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.volta-topo:hover {
+    border: 2px solid #00CC83;
+}
+
+
+
+/* Configurando as redes sociais */
+.sociais {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 18px;
+
+    font-size: 2.0em;
+    width: 100px;
+
+}
+
+/* Configurando o instagram */
+.fa-instagram {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-instagram:hover {
+    color: #00CC83;
+}
+
+/* Configurando o whatsapp */
+.fa-whatsapp {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-whatsapp:hover {
+    color: #00CC83;
+}
+
+/* Configurando o e-mail */
+.fa-envelope {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-envelope:hover {
+    color: #00CC83;
+}
+
+/* --------- Apoiadores--------- */
+.apoiadores {
+    background-color: rgb(96, 94, 94);
+    text-transform: uppercase;
+    font-size: 0.6em;
+    margin-top: 10px;
+    padding: 18px 0;
+}
+
+
+.apoiadores-img {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.copyright {
+
+
+    text-align: center;
+    font-size: 1em;
+    margin: 50px auto 0;
+
+}

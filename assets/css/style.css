@@ -1,0 +1,1003 @@
+    /* /Importando fonta da API google fonte --> League Spartan/ */
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;700&display=swap');
+
+    /* Zerar todas as margens e espaçamentos*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'League Spartan', sans-serif;
+
+    }
+
+    /* Inicio do documento*/
+    html {
+
+        width: 100%;
+
+        color: #fff;
+
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    /* Corpo do documento*/
+    body {
+
+        width: 100%;
+
+    }
+
+
+    /* Personalização da barra de rolagem */
+    body::-webkit-scrollbar {
+        background-color: #010A19;
+        width: 8px;
+
+        border: 1 px solid #010A19;
+
+    }
+
+    /* Botão da barra de rolagem  */
+    body::-webkit-scrollbar-thumb {
+        background-color: #00bb83;
+
+        height: 20px;
+        border-radius: 7px;
+    }
+
+
+
+    /* Cabeçalho*/
+    header {
+
+        width: 100%;
+        height: 12vh;
+        background: #010A19;
+        position: fixed;
+        z-index: 3;
+
+    }
+
+
+    /* Cabeçalho*/
+    .menugeral {
+
+        text-transform: uppercase;
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+
+    /* Cabeçalho logo*/
+    .menugeral img {
+
+
+        width: 290px;
+    }
+
+    /* Cabeçalho lista dos serviços*/
+    .menugeral ul {
+        margin-left: 300px;
+
+        display: flex;
+        list-style: none;
+        gap: 10px;
+    }
+
+    .menugeral ul a {
+        font-size: .6em;
+        text-decoration: none;
+        color: #fff;
+        padding: 1.5rem;
+        border-bottom: 3px solid transparent;
+        transition: all 0.2s ease-in-out;
+
+    }
+
+    /* /Efeito de ao passar o mouse ficar com a linha verde/ */
+    .menugeral ul a:hover {
+        border-bottom: 3px solid #00CC8D;
+    }
+
+
+    /* /Sessões gerais/ */
+    section {
+
+
+        width: 100%;
+        /* min-height: 100vh; */
+        display: flex;
+        align-items: center;
+    }
+
+
+    /* /Inicio de sessão --> inicio/ */
+    section:nth-of-type(1) {
+        /* /Adicionando a imagem junto com o efeito vidro/ */
+        background-image: url(../assets/img/inicio.jpg);
+
+        /*Alinhando a posição da imagem ao centro */
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px;
+
+    }
+
+    /* Blur*/
+    .teste {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        background: radial-gradient(170.68% 69.80% at -0.00% 33.72%, rgba(69, 69, 69, 0.822) 0%, rgba(255, 255, 255, 0.00) 100%);
+        backdrop-filter: blur(2px);
+
+
+    }
+
+    /* /Slogan| MULTI SOLUÇÕES/ */
+    .slogan-inicio {
+        position: absolute;
+        width: 100%;
+        display: inline-block;
+
+    }
+
+    .slogan-inicio h1 {
+
+        font-size: 86px;
+        color: #fff;
+        margin-bottom: 0px;
+        text-align: left;
+        /* position: absolute;
+    top: 39%;
+    left: 28%;
+    transform: translate(-50%,-50%); */
+
+        margin-left: 35px;
+
+
+    }
+
+    /* Slogan | PARA VOCÉ*/
+    .slogan-inicio h2 {
+
+        font-size: 86px;
+        color: #fff;
+        margin-bottom: 0px;
+        text-align: left;
+        margin-left: 320px;
+
+
+    }
+
+
+
+    /* Botão mouse animado */
+    .efeito-mouse {
+        /* /Alinhamento do mouse/ */
+        position: absolute;
+        top: 65%;
+        left: 3%;
+        transform: translate(-70%, -50%);
+
+        /* /Medidas/ */
+        width: 34px;
+        height: 150px;
+        margin-right: 80px;
+        z-index: 1;
+    }
+
+    .mouse {
+        /* /Dimenções do circulo/ */
+        width: 3px;
+        padding: 10px 15px;
+        height: 35px;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+    }
+
+    .rolamento {
+        width: 3px;
+        height: 10px;
+        border-radius: 25%;
+        background-color: #fff;
+        animation-name: scroll;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            opacity: 0;
+        }
+
+        10% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(15px);
+            opacity: 0;
+        }
+    }
+
+    /* Whatsapp contato*/
+    .contato-zap {
+        /* Fixando o incone do zap na tela*/
+        position: fixed;
+        /* Posicionando o incone*/
+        top: 50%;
+        left: 98.1%;
+        transform: translate(-50%, -50%);
+
+        z-index: 1;
+        /* Prioridade de visualização*/
+        width: 50px;
+        /* tamanho*/
+        opacity: 60%;
+        /* O quanto fica tranparente*/
+        transition: all 0.4s ease-in-out;
+    }
+
+    /* Mudando a opacidade, tamanho e posição*/
+    .contato-zap:hover {
+        position: fixed;
+
+        top: 50%;
+        left: 97%;
+        transform: translate(-50%, -50%);
+
+        width: 70px;
+        opacity: 100%;
+        /* Tirandodo a tranparencia*/
+    }
+
+
+
+
+    /* /Inicio de sessão --> Serviços/ */
+    section:nth-of-type(2) {
+        background: #010A19;
+
+
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 750px;
+    }
+
+    /* Titulo de Serviços*/
+    .titulo-servico {
+
+        color: #fff;
+        font-size: 2.5em;
+        text-align: center;
+        padding-top: 90px;
+        margin: auto;
+        text-transform: uppercase;
+    }
+
+    .titulo-servico h1 {
+        background-color: aqua;
+    }
+
+    /* Galeria dos cards*/
+    .gallery {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 50px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+
+    }
+
+    .card {
+
+        border: 2px solid;
+        color: #00cc83;
+        position: relative;
+        left: 0px;
+        width: 255px;
+        border-radius: 10px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+    }
+
+    .gallery a {
+        text-decoration: none;
+    }
+
+    .gallery h2 {
+
+        text-align: center;
+        border: 1px solid;
+        border-radius: 7px;
+        font-size: 25px;
+        padding: 15px;
+        backdrop-filter: blur(10px);
+
+
+
+    }
+
+    /* Imagens dentro dos cards*/
+    .gallery>a:nth-child(1) {
+        background-image: url(../assets/img/imgServicos/img_consulting.jpg);
+        background-size: cover;
+
+    }
+
+    .gallery>a:nth-child(2) {
+        background-image: url(../assets/img/imgServicos/img_pc.jpg);
+        background-size: cover;
+    }
+
+    .gallery>a:nth-child(3) {
+        background-image: url(../assets/img/imgServicos/img_coding3.jpg);
+        background-size: cover;
+    }
+
+    .gallery>a:nth-child(4) {
+        background-image: url(../assets/img/imgServicos/unsplash_FewHpO4VC9Y.jpg);
+        background-size: cover;
+    }
+
+    .card:hover {
+        width: 280px;
+
+    }
+
+
+    /* /Inicio de sessão --> Sobre/ */
+    section:nth-of-type(3) {
+        background: rgb(54, 54, 54);
+        height: 750px;
+    }
+
+    .sobre {
+
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        color: #fff;
+    }
+
+    .texto-sobre ul {
+
+
+
+        text-align: justify;
+        list-style: none;
+        font-size: 2em;
+        text-align: justify;
+        width: 650px;
+        margin: 30px;
+
+
+    }
+
+    .texto-sobre h1 {
+
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1em;
+        margin-bottom: 48px;
+
+
+    }
+
+    /* Inicio do carrossel de imagens  */
+    .carrosel {
+
+        border-radius: 7px;
+        margin-left: 30px;
+        box-shadow: 1px 2px 5px 3px #00cc83;
+        overflow: hidden;
+        height: 500px;
+        width: 599px;
+
+
+    }
+
+    .container_imgs {
+        display: flex;
+
+        transform: translateX(0);
+        transition: all 1s ease-in-out;
+
+    }
+
+    .container_imgs img {
+
+        object-fit: cover;
+        height: 500px;
+        width: 599px;
+        transition: 2ms ease-in-out;
+
+    }
+
+    /* Misão Visão e Valores da Multi Tecnologic */
+
+    /*------------ Missão ------------*/
+    .missao-visao-valores {
+
+        align-items: center;
+        background-color: #afafaf;
+        color: #1c191a;
+        margin: auto;
+    }
+
+    .missao {
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        margin: auto 120px;
+    }
+
+    .icone-titulo {
+
+        margin-left: 5%;
+    }
+
+    .icone-titulo h1 {
+
+
+        font-size: 1.2em;
+        text-transform: uppercase;
+
+    }
+
+    .missao h4 {
+
+        text-align: justify;
+        font-size: 1.5em;
+        margin: auto 80px auto 20px;
+
+
+    }
+
+    /* ------------ Visão ------------*/
+
+    .visao-multi {
+        background-color: rgb(116, 115, 115);
+    }
+
+    .visao {
+        height: 250px;
+        background-color: rgb(116, 115, 115);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        margin: auto 120px;
+    }
+
+    .visao h4 {
+
+        text-align: justify;
+        font-size: 1.5em;
+        margin: auto 80px auto 20px;
+
+
+    }
+
+    /* ------------ Valores ------------*/
+
+    .valores {
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        margin: auto 120px;
+    }
+
+    .valores h4 {
+
+        text-align: justify;
+        font-size: 1.6em;
+        margin: auto 80px auto 20px;
+
+
+    }
+
+    /*------------ Visão ------------*/
+
+
+    .visao {
+        background-color: rgb(116, 115, 115);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+    }
+
+    .visao p {
+        color: #fff;
+        text-align: justify;
+        font-size: 1.5em;
+        margin: auto 80px auto 20px;
+
+
+    }
+
+
+
+
+
+    section:nth-of-type(4) {
+        background: linear-gradient(180deg, #00BB83 0%, #00251A 100%);
+        height: 700px;
+    }
+
+    .tiVerde {
+
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .titulo-texto-botao-tiVerde {
+
+        list-style: none;
+        text-indent: 20px;
+        font-size: 2em;
+
+        padding: 30px;
+        margin-left: 20px;
+        text-align: justify;
+
+
+    }
+
+    .titulo-texto-botao-tiVerde h1 {
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    /* botão do tiverde*/
+    .btn-tiverde {
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*Tamanho */
+        font-size: 20px;
+        width: 220px;
+        height: 50px;
+        border-radius: 10px;
+
+        /* /Cores do botão/ */
+        background: #00CC8D;
+
+
+        /* /Espaçamento/ */
+        letter-spacing: 0.3rem;
+        /* adicionando Ponteiro e tirando a borda*/
+        cursor: pointer;
+        outline: none;
+        border: none;
+
+    }
+
+    .btn-tiverde:hover {
+        border: 2px solid #00CC83;
+        background-color: #00bb8300;
+    }
+
+    .btn-tiverde a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.7em;
+    }
+
+    /* arvore*/
+
+    .imagem-tiverde img {
+
+        padding: 30px;
+        width: 600px;
+        height: 600px;
+        margin-left: 60px;
+    }
+
+    /* rodapé*/
+    footer {
+        width: 100%;
+        background: #010A19;
+        text-align: justify;
+        padding: 50px 0px;
+    }
+
+    .topicos {
+        margin: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+
+    }
+
+    /* logo*/
+    .logo-footer img {
+        width: 290px;
+    }
+
+    /* Redes sociais*/
+
+
+
+
+    /* Listas */
+    footer ul {
+
+        list-style: none;
+        color: #fff;
+
+        letter-spacing: 0.2rem;
+        font-size: 0.6em;
+        font-weight: 80;
+    }
+
+    .servicos-footer h3 {
+
+        padding-bottom: 15px;
+        color: #fff;
+        font-size: 2rem;
+        font-size: 2.2em;
+
+    }
+
+    .servicos-footer li {
+
+        margin-bottom: 5px;
+
+    }
+
+    .servicos-footer a {
+        font-size: 1.5em;
+        color: #d5d5d5;
+        text-decoration: none;
+        text-transform: uppercase;
+
+    }
+
+
+    /* Animação  de passar o mouse*/
+    .servicos-footer a:hover {
+        color: #00CC83;
+
+    }
+
+    /* --------- Seta de voltar ao topo e as redes sociais--------- */
+    .volta-topo-sociais {
+
+        width: 170px;
+
+        color: #fff;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+
+
+
+
+
+    }
+
+    .volta-topo {
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        margin: auto;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .seta {
+
+        margin: -3.5px 14px;
+        text-align: center;
+        font-size: 4em;
+        color: #fff;
+
+
+
+    }
+
+    .topo {
+        font-size: 1.5em;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 8px;
+    }
+
+    .volta-topo:hover {
+        border: 2px solid #00CC83;
+    }
+
+
+
+    /* Configurando as redes sociais */
+    .sociais {
+
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 18px;
+
+        font-size: 2.0em;
+        width: 100px;
+
+    }
+
+    /* Configurando o instagram */
+    .fa-instagram {
+        text-decoration: none;
+        color: #ffffff;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .fa-instagram:hover {
+        color: #00CC83;
+    }
+
+    /* Configurando o whatsapp */
+    .fa-whatsapp {
+        text-decoration: none;
+        color: #ffffff;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .fa-whatsapp:hover {
+        color: #00CC83;
+    }
+
+    /* Configurando o e-mail */
+    /* .fa-envelope{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+.fa-envelope:hover{
+    color: #00CC83;
+} */
+
+
+
+
+
+    /* --------- Apoiadores--------- */
+    .apoiadores {
+        background-color: rgb(96, 94, 94);
+        text-transform: uppercase;
+        font-size: 0.6em;
+        margin-top: 10px;
+        padding: 18px 0;
+    }
+
+
+    .apoiadores-img {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .copyright {
+
+
+        text-align: center;
+        font-size: 1em;
+        margin: 50px auto 0;
+
+    }
+
+
+    /* @media screen and (max-width:768px){
+    
+header{
+    
+    width:768px;
+    height: 35vh;
+    background: #010A19;
+    
+    
+}
+
+nav{
+
+    margin: 0;
+    margin-left: -269px;
+    padding: 0;
+    
+
+}
+
+.menugeral{
+    
+   display: block;
+    
+    text-transform: uppercase;
+    font-size: 1.9rem;
+}
+
+.menugeral img{
+    margin-top: 30px;
+    margin-left: 30px ;
+    
+    
+    width: 350px;
+}
+
+.menugeral ul{
+    
+    margin-top: 20px;
+    list-style: none;
+    gap: 22px;
+}
+.menugeral ul a{
+    padding: 0;
+    font-size: .6em;
+    text-decoration: none;
+    color: #fff;
+    
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.menugeral ul a:hover{
+    border-bottom: 3px solid #00CC8D;
+} */
+    /* Fim do Cabeçalho */
+    /* --------- Start Body --------- */
+    /* section{
+    width: 100%; 
+}
+section:nth-of-type(1){
+    
+    height: 758px;
+    background-position-y: 70px;
+}
+.teste{
+    
+    height: 758px;
+    background: radial-gradient(170.68% 69.80% at -0.00% 33.72%, rgba(69, 69, 69, 0.822) 0%, rgba(255, 255, 255, 0.00) 100%);
+    backdrop-filter: blur(2px);
+    background-position-y: 150%;
+
+    
+}
+
+.slogan-inicio{
+    position: absolute;
+    width: 100%;
+    display: block;
+    
+    margin-top: 100px;
+}
+.slogan-inicio h1{
+    
+    font-size:4.7em;
+    color: #fff;
+    margin-bottom: 0px;
+    text-align: center;
+    margin: auto;
+
+    
+
+    
+}
+
+.slogan-inicio h2{
+    
+    font-size:4.2em;
+    color: #fff;
+    margin-bottom: 0px;
+    text-align: center; 
+    margin: auto;
+    
+    
+}
+
+.efeito-mouse {
+    
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    transform: translate(-70%,-50%);
+    
+    
+    width :34px;
+    height: 150px;
+    margin-right: 80px;
+    z-index: 1;
+  }
+  .mouse {
+   
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75 ;
+    box-sizing: content-box;
+  }
+  .rolamento {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+
+
+.contato-zap{
+    
+    position: fixed;
+    
+    top: 35%;
+    left: 48.1%;
+    transform: translate(-50%,-50%);
+    
+    z-index: 1;
+    width: 50px;
+    opacity: 60%;
+    transition: all 0.4s ease-in-out;
+}
+
+.contato-zap:hover{
+    position: fixed;
+    
+    top: 35%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+
+    width: 70px;
+    opacity: 100%;
+}
+
+} */

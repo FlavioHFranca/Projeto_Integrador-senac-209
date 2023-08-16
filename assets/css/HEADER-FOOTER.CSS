@@ -1,0 +1,281 @@
+    /* /Importando fonta da API google fonte --> League Spartan/ */
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;700&display=swap');
+
+    /* Zerar todas as margens e espaçamentos*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'League Spartan', sans-serif;
+
+    }
+
+    /* Inicio do documento*/
+    html {
+
+        width: 100%;
+
+        color: #fff;
+
+        overflow-x: hidden;
+
+    }
+
+    /* Corpo do documento*/
+    body {
+        width: 100%;
+
+    }
+
+    /* Cabeçalho*/
+    header {
+        width: 100%;
+        height: 12vh;
+        background: #010A19;
+        position: fixed;
+        z-index: 3;
+
+    }
+
+
+    /* Cabeçalho*/
+    .menugeral {
+
+        text-transform: uppercase;
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+
+    /* Cabeçalho logo*/
+    .menugeral img {
+
+        margin-right: 110px;
+        width: 290px;
+    }
+
+    /* Cabeçalho lista dos serviços*/
+    .menugeral ul {
+        margin-left: 300px;
+
+        display: flex;
+        list-style: none;
+        gap: 10px;
+    }
+
+    .menugeral ul a {
+        font-size: .6em;
+        text-decoration: none;
+        color: #fff;
+        padding: 1.5rem;
+        border-bottom: 3px solid transparent;
+        transition: all 0.2s ease-in-out;
+
+    }
+
+    /* /Efeito de ao passar o mouse ficar com a linha verde/ */
+    .menugeral ul a:hover {
+        border-bottom: 3px solid #00CC8D;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* rodapé*/
+    footer {
+        width: 100%;
+        background: #010A19;
+        text-align: justify;
+        padding: 50px 0px;
+    }
+
+    .topicos {
+        margin: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+
+    }
+
+    /* logo*/
+    .logo-footer img {
+        width: 290px;
+    }
+
+    /* Listas */
+    footer ul {
+
+        list-style: none;
+        color: #fff;
+
+        letter-spacing: 0.2rem;
+        font-size: 0.6em;
+        font-weight: 80;
+    }
+
+    .servicos-footer h3 {
+
+        padding-bottom: 15px;
+        color: #fff;
+        font-size: 2rem;
+        font-size: 2.2em;
+
+    }
+
+    .servicos-footer li {
+
+        margin-bottom: 5px;
+
+    }
+
+    .servicos-footer a {
+        font-size: 1.5em;
+        color: #d5d5d5;
+        text-decoration: none;
+        text-transform: uppercase;
+
+    }
+
+
+    /* Animação  de passar o mouse*/
+    .servicos-footer a:hover {
+        color: #00CC83;
+
+    }
+
+    /* --------- Seta de voltar ao topo e as redes sociais--------- */
+    .volta-topo-sociais {
+
+        width: 170px;
+
+        color: #fff;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+
+
+
+
+
+    }
+
+    .volta-topo {
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        margin: auto;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .seta {
+
+        margin: -3.5px 14px;
+        text-align: center;
+        font-size: 4em;
+        color: #fff;
+
+
+
+    }
+
+    .topo {
+        font-size: 1.5em;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 8px;
+    }
+
+    .volta-topo:hover {
+        border: 2px solid #00CC83;
+    }
+
+
+
+    /* Configurando as redes sociais */
+    .sociais {
+
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 18px;
+
+        font-size: 2.0em;
+        width: 100px;
+
+    }
+
+    /* Configurando o instagram */
+    .fa-instagram {
+        text-decoration: none;
+        color: #ffffff;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .fa-instagram:hover {
+        color: #00CC83;
+    }
+
+    /* Configurando o whatsapp */
+    .fa-whatsapp {
+        text-decoration: none;
+        color: #ffffff;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .fa-whatsapp:hover {
+        color: #00CC83;
+    }
+
+    /* Configurando o e-mail */
+    .fa-envelope {
+        text-decoration: none;
+        color: #ffffff;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .fa-envelope:hover {
+        color: #00CC83;
+    }
+
+    /* --------- Apoiadores--------- */
+    .apoiadores {
+        background-color: rgb(96, 94, 94);
+        text-transform: uppercase;
+        font-size: 0.6em;
+        margin-top: 10px;
+        padding: 18px 0;
+    }
+
+
+    .apoiadores-img {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .copyright {
+
+
+        text-align: center;
+        font-size: 1em;
+        margin: 50px auto 0;
+
+    }

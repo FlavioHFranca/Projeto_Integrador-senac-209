@@ -1,0 +1,217 @@
+ /* /Importando fonta da API google fonte --> League Spartan/ */
+ @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;700&display=swap');
+
+
+ /* Zerar todas as margens e espaçamentos*/
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'League Spartan', sans-serif;
+
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     width: 100%;
+     background-color: #010A19;
+ }
+
+ /* Personalização da barra de rolagem */
+ body::-webkit-scrollbar {
+     background-color: #010A19;
+     width: 8px;
+
+     border: 1 px solid #010A19;
+
+ }
+
+ /* Botão da barra de rolagem  */
+ body::-webkit-scrollbar-thumb {
+     background-color: #00bb83;
+
+     height: 20px;
+     border-radius: 7px;
+ }
+
+ .caixa {
+     /* Deixando o banner como background e ajustando */
+     background-image: url(../assets/img/imgTiverde/banner.png);
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* tamanho do banner */
+     height: 60vh;
+     /* Deixando todos os elementos(O texto) centralizados */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .textoverde {
+     font-size: 5em;
+     margin: auto;
+     text-transform: uppercase;
+     text-shadow: 1px 1px 2px #000000ac;
+     padding-top: 100px;
+
+ }
+
+ .textoinicial {
+     margin: auto;
+     height: 330px;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     line-height: 40px;
+ }
+
+ .textoinicial p {
+     text-align: justify;
+     margin: auto 150px;
+     font-size: 1.8em;
+ }
+
+ /* Whatsapp contato*/
+ .contato-zap {
+     /* Fixando o incone do zap na tela*/
+     position: fixed;
+     /* Posicionando o incone*/
+     top: 50%;
+     left: 98.1%;
+     transform: translate(-50%, -50%);
+
+     z-index: 1;
+     /* Prioridade de visualização*/
+     width: 50px;
+     /* tamanho*/
+     opacity: 60%;
+     /* O quanto fica tranparente*/
+     transition: all 0.4s ease-in-out;
+ }
+
+ /* Mudando a opacidade, tamanho e posição*/
+ .contato-zap:hover {
+     position: fixed;
+
+     top: 50%;
+     left: 97%;
+     transform: translate(-50%, -50%);
+
+     width: 70px;
+     opacity: 100%;
+     /* Tirandodo a tranparencia*/
+ }
+
+ /* Veotes do fundo  */
+ .mouse {
+
+     position: absolute;
+     right: 0px;
+ }
+
+ .mouse img {
+     width: 120px;
+ }
+
+
+
+ .fotinhas {
+     background-color: #016116;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     height: 250px;
+ }
+
+ .fotinhas img {
+
+     width: 60%;
+     height: 60%;
+ }
+
+ .cont {
+     width: 100%;
+     margin: 35px;
+ }
+
+
+ /* Mais informação sobre o TI Verde */
+ .paragrafos {
+
+     margin: auto;
+     height: 315px;
+
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     margin-top: 60px;
+ }
+
+ .paragrafos p {
+     text-align: justify;
+     margin: 10px 150px 0px 150px;
+     font-size: 1.8em;
+     line-height: 40px;
+ }
+
+ .partner {
+
+     background-color: #016116;
+
+     width: 100%;
+     padding-bottom: 40px;
+     margin: 200px auto 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+
+
+ .partner h2 {
+
+     text-align: center;
+     margin-top: 60px;
+
+     font-size: 1.8em;
+     text-transform: uppercase;
+ }
+
+ .partner-paragraph {
+     margin-top: 10px;
+     width: 1070px;
+     display: inline-block;
+ }
+
+ .partner-paragraph img {
+
+     width: 250px;
+     padding: 25px;
+
+
+ }
+
+ .partner-paragraph p {
+     line-height: 40px;
+     color: #FFF;
+     font-size: 1.8em;
+     text-align: justify;
+     width: 85%;
+
+
+
+ }
+
+ .patrocinio-img {
+
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+
+ }
