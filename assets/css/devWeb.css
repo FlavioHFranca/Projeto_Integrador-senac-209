@@ -1,0 +1,197 @@
+/* Importando Fontes: 'League Spartan' */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Personalização da barra de rolagem */
+body::-webkit-scrollbar {
+    background-color: #010A19;
+    width: 8px;
+
+    border: 1px solid #010A19;
+
+}
+
+/* Botão da barra de rolagem  */
+body::-webkit-scrollbar-thumb {
+    background-color: #00bb83;
+
+    height: 20px;
+    border-radius: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Whatsapp contato*/
+.contato-zap {
+    /* Fixando o incone do zap na tela*/
+    position: fixed;
+    /* Posicionando o incone*/
+    top: 50%;
+    left: 98.1%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+    /* Prioridade de visualização*/
+    width: 50px;
+    /* tamanho*/
+    opacity: 60%;
+    /* O quanto fica tranparente*/
+    transition: all 0.2s ease-in-out;
+}
+
+/* Mudando a opacidade, tamanho e posição*/
+.contato-zap:hover {
+    position: fixed;
+
+    top: 50%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+
+    width: 70px;
+    opacity: 100%;
+    /* Tirandodo a tranparencia*/
+}
+
+
+/* HERO */
+/* .hero-banner {} */
+
+.hero-banner:nth-child(1) {
+    content: '';
+    display: flex;
+    align-items: center;
+
+    background-image: radial-gradient(231.00% 135.80% at 0.90% 2.98%, rgba(0, 187, 131, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%), url("../img/imgWeb/img_banner_coding.svg");
+
+    background-position-y: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+
+
+    /* left: 0; */
+    width: 100%;
+    /* height: 427px; */
+    height: 60vh;
+
+}
+
+.hero-banner h1 {
+    margin: auto;
+    font-size: 5em;
+    /* -webkit-text-stroke: 1.5px #000000; */
+    text-shadow: 1px 1px 2px #000000ac;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 75px;
+    ;
+}
+
+
+
+/* HERO PARAGRAPH */
+.main-content {
+    background-color: #010A19;
+    height: 400px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-content-paragraph p {
+    color: #FFF;
+    font-size: 1.8em;
+    text-align: justify;
+    width: 500px;
+    line-height: 40px;
+}
+
+.main-content-img-girl img {
+    width: 95%;
+}
+
+
+
+
+.container {
+    margin: auto;
+    margin-bottom: 40px;
+    min-height: 580px;
+}
+
+
+.container-title h2 {
+    color: #010A19;
+    font-size: 2em;
+
+    text-align: center;
+    margin: 60px 0 25px 35px;
+    text-transform: uppercase;
+}
+
+.container-paragraph-wrapper {
+
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+
+
+
+}
+
+.container-paragraph {
+    color: #010A19;
+    display: block;
+
+    margin: 20px;
+}
+
+.container-paragraph img {
+    width: 5em;
+    padding-bottom: 15px;
+
+    /* position: relative; */
+    display: block;
+    margin: auto;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.container-paragraph h3 {
+    font-size: 1.5em;
+
+    text-transform: uppercase;
+
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container-paragraph p {
+    font-size: 1.2em;
+    text-align: center;
+
+    width: 230px;
+    padding: 10px 0;
+}

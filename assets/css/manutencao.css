@@ -1,0 +1,467 @@
+body {
+    background-color: #7F8180;
+}
+
+/* Personalização da barra de rolagem */
+body::-webkit-scrollbar {
+    background-color: #010A19;
+    width: 8px;
+
+    border: 1px solid #010A19;
+
+}
+
+/* Botão da barra de rolagem  */
+body::-webkit-scrollbar-thumb {
+    background-color: #00bb83;
+
+    height: 20px;
+    border-radius: 7px;
+}
+
+/* Whatsapp contato*/
+.contato-zap {
+    /* Fixando o incone do zap na tela*/
+    position: fixed;
+    /* Posicionando o incone*/
+    top: 50%;
+    left: 98.1%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+    /* Prioridade de visualização*/
+    width: 50px;
+    /* tamanho*/
+    opacity: 60%;
+    /* O quanto fica tranparente*/
+    transition: all 0.2s ease-in-out;
+    z-index: 2;
+}
+
+/* Mudando a opacidade, tamanho e posição*/
+.contato-zap:hover {
+    position: fixed;
+
+    top: 50%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+
+    width: 70px;
+    opacity: 100%;
+    /* Tirandodo a tranparencia*/
+}
+
+section:nth-of-type(1) {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../img/imgManutencao/conseto9\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.texto-banner {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: red;
+    display: flex;
+    align-items: center;
+
+    background: radial-gradient(921.11% 141.42% at 100.00% 100.00%,
+            rgba(0, 187, 131, 0.269) 0%,
+            rgba(255, 255, 255, 0.00) 100%);
+    backdrop-filter: blur(2.5px);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.texto-banner h1 {
+    font-size: 5em;
+    /* -webkit-text-stroke: 1.5px #000000; */
+    text-shadow: 1px 1px 2px #000000ac;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 80px;
+
+}
+
+.descricao-botao-img {
+
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #21242E;
+    padding: 30px;
+    justify-content: center;
+    margin: auto;
+}
+
+.descricao-botao-img ul {
+    margin: auto;
+    list-style: none;
+    text-indent: 20px;
+    margin: 0px 40px;
+    line-height: 40px;
+    font-size: 1.8em;
+    text-align: justify;
+    color: #fff;
+
+}
+
+.descricao-botao-img li {
+    width: 800px;
+}
+
+.descricao-botao-img img {
+    width: 400px;
+
+}
+
+/* Caixas dos serviços */
+.caixas {
+
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 900px;
+
+
+}
+
+/*------------- INICIO DA MANUTENÇÃO-------------*/
+.caixa-manutencao {
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+
+}
+
+/* Titulo  */
+.caixa-manutencao h1 {
+    color: #000000;
+    font-size: 2em;
+
+}
+
+/* Texto de explicação   */
+.texto-manutencao {
+    background-color: #00cc8b;
+    color: #fff;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 35px 35px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    line-height: 20px;
+}
+
+.texto-manutencao>p {
+    background-color: red;
+}
+
+/* Apareção da explicação  */
+.caixa-manutencao:hover>.texto-manutencao {
+    display: block;
+    position: absolute;
+}
+
+
+/*------------- INICIO DA MONTAGEM-------------*/
+.caixa-montagem {
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+
+}
+
+/* Titulo  */
+.caixa-montagem h1 {
+    color: #000000;
+    font-size: 2em;
+}
+
+/* Texto de explicação   */
+.texto-montagem {
+    background-color: #00cc8b;
+    color: #fff;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 83px 35px 0 35px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    line-height: 20px;
+}
+
+/* Apareção da explicação  */
+.caixa-montagem:hover>.texto-montagem {
+    display: block;
+    position: absolute;
+
+}
+
+/*------------- INICIO DA FORMATAÇAÕ -------------*/
+.caixa-formatacao {
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+}
+
+/* Titulo  */
+.caixa-formatacao h1 {
+    color: #000000;
+    font-size: 2em;
+}
+
+/* Texto de explicação   */
+.texto-formatacao {
+    background-color: #00cc8b;
+    color: #fff;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 75px 35px 0 35px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    line-height: 20px;
+}
+
+/* Apareção da explicação  */
+.caixa-formatacao:hover>.texto-formatacao {
+    display: block;
+    position: absolute;
+
+}
+
+
+/*------------- INICIO DE RECUPERAÇÃO DE ARQUIVOS-------------*/
+
+.caixa-R-arquivos {
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+
+}
+
+/* Titulo  */
+.caixa-R-arquivos h1 {
+    color: #000000;
+    font-size: 2em;
+}
+
+.texto-R-arquivos {
+    background-color: #00cc8b;
+    color: #fff;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 120px 35px 0 35px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    line-height: 20px;
+}
+
+/* Apareção da explicação  */
+.caixa-R-arquivos:hover>.texto-R-arquivos {
+    display: block;
+    position: absolute;
+
+}
+
+/*------------- INICIO DE Softwares para Escritório-------------*/
+
+.caixa-S-escritorio {
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+}
+
+/* Titulo  */
+.caixa-S-escritorio h1 {
+    color: #000000;
+    font-size: 2em;
+}
+
+/* Texto de explicação   */
+.texto-S-escritorio {
+    background-color: #00cc8b;
+    color: #fff;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 100px 35px 0 35px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    line-height: 20px;
+}
+
+/* Apareção da explicação  */
+.caixa-S-escritorio:hover>.texto-S-escritorio {
+    display: block;
+    position: absolute;
+
+}
+
+/*------------- INICIO DE ATENDIMENTO-------------*/
+
+.caixa-atendimento {
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #000000;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+}
+
+/* Titulo  */
+.caixa-atendimento h1 {
+    color: #000000;
+    font-size: 2em;
+}
+
+/* Texto de explicação   */
+.texto-atendimento {
+    background-color: #00cc8b;
+    color: #fff;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 100px 35px 0 35px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    line-height: 20px;
+}
+
+/* Apareção da explicação  */
+.caixa-atendimento:hover>.texto-atendimento {
+    display: block;
+    position: absolute;
+
+}
+
+
+/* Botão de contato */
+.botao-manutencao1 {
+    margin: 100px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 39px;
+    font-size: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+
+
+
+    background-color: #00CC8D;
+
+}
+
+.botao-manutencao1 a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.botao-manutencao1:hover {
+    border: 2px solid #00CC8D;
+    background-color: #7F8180;
+}
+
+.breve_aviso {
+    background-color: #21242E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.breve_aviso p {
+    color: #fff;
+    text-align: justify;
+    font-size: 1.8em;
+    padding: 0 40px;
+    line-height: 40px;
+    width: 800px;
+}
+
+.breve_aviso img {
+    width: 400px;
+    height: 400px;
+}
