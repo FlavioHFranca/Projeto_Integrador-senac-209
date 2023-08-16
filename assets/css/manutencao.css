@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb {
 section:nth-of-type(1) {
     width: 100%;
     height: 60vh;
-    background-image: url(../assets/img/imgManutencao/conseto9\ 1.jpg);
+    background-image: url(../img/imgManutencao/conseto9\ 1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 

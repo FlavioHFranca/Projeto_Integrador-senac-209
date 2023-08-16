@@ -117,7 +117,7 @@
     /* /Inicio de sessão --> inicio/ */
     section:nth-of-type(1) {
         /* /Adicionando a imagem junto com o efeito vidro/ */
-        background-image: url(../assets/img/inicio.jpg);
+        background-image: url(../img/inicio.jpg);
 
         /*Alinhando a posição da imagem ao centro */
         background-position: center center;
@@ -340,23 +340,23 @@
 
     /* Imagens dentro dos cards*/
     .gallery>a:nth-child(1) {
-        background-image: url(../assets/img/imgServicos/img_consulting.jpg);
+        background-image: url(../img/imgServicos/img_consulting.jpg);
         background-size: cover;
 
     }
 
     .gallery>a:nth-child(2) {
-        background-image: url(../assets/img/imgServicos/img_pc.jpg);
+        background-image: url(../img/imgServicos/img_pc.jpg);
         background-size: cover;
     }
 
     .gallery>a:nth-child(3) {
-        background-image: url(../assets/img/imgServicos/img_coding3.jpg);
+        background-image: url(../img/imgServicos/img_coding3.jpg);
         background-size: cover;
     }
 
     .gallery>a:nth-child(4) {
-        background-image: url(../assets/img/imgServicos/unsplash_FewHpO4VC9Y.jpg);
+        background-image: url(../img/imgServicos/unsplash_FewHpO4VC9Y.jpg);
         background-size: cover;
     }
 

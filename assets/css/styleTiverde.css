@@ -39,7 +39,7 @@
 
  .caixa {
      /* Deixando o banner como background e ajustando */
-     background-image: url(../assets/img/imgTiverde/banner.png);
+     background-image: url(../img/imgTiverde/banner.png);
      background-position: center center;
      background-repeat: no-repeat;
      background-size: cover;
