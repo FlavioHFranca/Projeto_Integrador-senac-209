@@ -1,69 +1,239 @@
-/* Adicione esta media query */
-@media (max-width: 1201px) {
-
-    /* Ajuste o cabeçalho */
-    .menugeral ul {
-        margin-left: 0;
-        position: relative;
+/* Responsividade @media query */
+@media (max-width:1270px){
+    .contato-zap {
+        left: 97.1%;
     }
-    .menugeral img {
-        margin-right: 0;
-        width: 200px; /* Reduza o tamanho do logo */
+    .contato-zap:hover {
+        left: 96%;
     }
-
-    /* Ajuste o título de serviços */
+    .sobre{
+        
+        display: grid;
+        
+    }
+    .sobre ul {
+        width: 100%;
+        
+        max-width: 850px;
+        padding: 50px 0;
+    }
+    #NossoTime{
+        height: 120vh;
+    }
+    .tiVerde{
+        width: 100%;
+        font-size: 80%;
+    }
+    
+}
+@media screen and (max-width:1028px){
+    #servicos{
+        height: 150vh;
+    }
     .titulo-servico h1 {
-        font-size: 1.8em;
+        font-size: 1.1em;
     }
-
-    /* Ajuste a galeria de cards */
-    .gallery {
-        justify-content: center;
+    .sobre ul{
+        padding: 100px 30px 0;
     }
-    .card {
-        width: 100%;
-        margin-bottom: 20px;
+}
+@media screen and (max-width:873px){
+    .slogan-inicio{
+        
+        margin: 100px 0 0 0;
     }
-    .card:hover {
-        width: 100%;
+    .slogan-inicio h1,.slogan-inicio h2{
+        font-size: 4rem; 
     }
-
-    /* Ajuste o texto sobre */
-    .texto-sobre ul {
-        width: 100%;
-        margin: 0;
-    }
-
-    /* Ajuste o carrossel de imagens */
-    .carrosel {
-        width: 100%;
-    }
-
-    /* Ajuste os ícones de missão, visão e valores */
-    .icone-titulo h1, .missao h4, .visao h4, .valores h4 {
+    .titulo-texto-botao-tiVerde{
+        
+        max-width: 850px;
         margin: auto 10px;
+        
+        
     }
-
-    /* Ajuste a imagem de árvore */
-    .imagem-tiverde img {
-        padding: 10px;
+    .imagem-tiverde img{
+        display: none;
+    }
+    .missao,.visao,.valores{
+        display: grid;
+        margin: 0;
+        font-size: 0.9em;
+        height: 100%;
+        
+    }
+    .missao h4,.visao h4,.valores h4{
+        padding: 30px 0;
+    }
+    .missao-visao-valores img{
         width: 100%;
-        height: auto;
-        margin-left: 0;
+        max-width: 100px;
+        
     }
+    footer{
+        margin: 0;
+        padding-top:20px;
+    }
+    .topicos{
+        text-align: left;
+        margin-left:30px ;
+        display: inline-block;
+    }
+    .logo-footer img{
+        margin: auto;
+    }
+    .servicos-footer{
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width:704px){
+    .sobre{
+        font-size: 80%; 
+    }
+}
+@media screen and (max-width:686px){
+    
+    .logo{
+        margin: auto;
+    }
+    .menugeral{
+        
+        z-index: 3;
+        height: 5vh;
+        background: #010A19;
+        display: grid;
+        align-items: center;
+    }
+    .menugeral ul{
+        width: 100%;
+        font-size: 1.9rem;
+        
+        
+    }
+    .slogan-inicio h1,.slogan-inicio h2{
 
-    /* Ajuste o rodapé */
-    .logo-footer img {
-        width: 150px;
+        font-size: 3.5rem;
+    } 
+    .contato-zap {
+        left: 93.5%;
     }
-    .topicos {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 20px;
+    .contato-zap:hover {
+        left: 91%;
     }
-    .sociais {
-        justify-content: flex-start;
-        margin-top: 10px;
+    .sobre{
+        
+        display: grid;
+        
+    }  
+    .carrosel{
+        width: 100%;
+        max-width: 499px;
+        
     }
-
+    
+}
+@media screen and (max-width:686px){
+    header{
+        background-color: #010A19;
+        height: 20vh;
+        
+    }
+    
+    .menugeral ul,.menugeral img{
+        background-color: rebeccapuple;
+        margin: 8px 0;
+        
+        
+    }
+    .slogan-inicio h2{
+        margin:0 0 0 190px;
+    }
+    .mouse{
+        display: none;
+    }
+}
+@media screen and (max-width:568px){
+    .contato-zap {
+        top: 30%;
+    }
+    .contato-zap:hover {
+        top: 30%;
+    }
+    .sobre{
+        
+        top: 50%;
+        
+    }
+}
+@media screen and (max-width:517px){
+    html{
+        font-size: 90%;
+    }
+    .titulo-servico{
+        padding: auto;
+    }
+    .gallery{
+        margin-top: 0px;
+    }
+    #servicos{
+        height: 260vh;
+    }
+    .carrosel{
+        width: 100%;
+        max-width: 459px;
+        
+    }
+}
+@media screen and (max-width:468px){
+    .slogan-inicio h1,.slogan-inicio h2{
+        font-size: 2.8rem;
+    }
+}
+@media screen and (max-width:425px){
+    .menugeral ul{
+        font-size: 1.7rem;
+    }
+    .slogan-inicio h2{
+        align-items: center;
+        margin: 0 0 0 150px;
+        
+    }
+    .titulo-servico{
+        padding-top: 0;
+    }
+    #servicos{
+        height: 240vh;
+    }
+    .card{
+        max-height: 400px;
+    }
+    
+}
+@media screen and (max-width:374px){
+    html{
+        font-size: 80%;
+    }
+    .menugeral ul,.menugeral img{
+        background-color: rebeccapuple;
+        margin: 12px 0;
+        
+        
+    }
+}
+@media screen and (max-width:347px){
+    html{
+        font-size: 65%;
+    }
+    .slogan-inicio h1,.slogan-inicio h2{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:325px){
+    
+    .carrosel{
+        width: 100%;
+        max-width: 290px;
+        
+    } 
+    
 }
